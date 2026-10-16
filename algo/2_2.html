@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset = "UTF-8">
+    <meta charset = "utf-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
@@ -45,7 +45,6 @@
     padding: 0 24px;
     padding-right: 20px;
     line-height: 1.8;
-    width: 100%;
     max-width: 880px;
     box-sizing: border-box;
     color: #263238;
@@ -194,6 +193,11 @@ display: none;
     .cont {
         grid-template-columns: 1fr;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
 }
     </style>
 </head>
