@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+body {
+    margin: 0 auto;
+    max-height: 240px auto;
+    background: #ffffff;
+    color: #000000;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+
+main{
+    margin-inline: auto;
+    padding: 0px 100px;
+    max-width: 880px;
+    background-color: #f1eebe;
+    font-style: inherit;
+    font-size: 18px;
+    color:  #5b767c ;
+}
+
+.topics {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.topics  a  {
+    text-decoration: none;
+    min-width: 0;
+}
+.section {
+    margin: 5px;
+    margin-top: 40px;
+    max-height: 85px;
+    border-bottom: 1px solid #345f8adc;
+    font-size: 24px;
+    color: #345f8a;
+}
+
+.subsection {
+    display: block;
+    margin: 5px;
+    margin-top: 20px;
+    max-height: 60px;
+    color: #527da9;
+    font-size: 18px;
+    border-bottom: 1px solid #97bdc2;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+
+.area1{
+    background-color: #ffffff;
+}
+
+.area2 {
+    background-color: #ffadad;
+}
+
+.headder{
+    position: static;
+    top: 0;
+    border-bottom: 1px solid #97bdc2;
+    width: min(1820px, calc(100% - 40px));
+    min-height: 68px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header-nav {
+    color: #757575;
+}
+</style>
+</head>
+<body>
+<div class = "layout">    
+    <div class = "area1">
+    <header class = "headder">
+        <h4>Algorithm</h4>
+        <span class = "header-nav">home</span>
+    </header>
+    </div>
+    <div class = "area2">
+<main>
+<topic class = "topics">
+<section class = "section">
+    2章
+</section>
+    <a href=""><subsection class = "subsection">2-1：全探索</subsection></a>
+    <a href="/2_2.html"><subsection class = "subsection">2-2：貪欲法</subsection></a>
+    <a href=""><subsection class = "subsection">2-2：貪欲法</subsection></a>
+</topic>
+</main>
+    </div>
+</div>
+</body>
