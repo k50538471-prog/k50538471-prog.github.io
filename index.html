@@ -50,12 +50,25 @@
       justify-content: space-between;
       gap: 24px;
     }
-    .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 750; letter-spacing: -.025em; }
+    .brand { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 10px; 
+      font-weight: 350; 
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      letter-spacing: -.025em; 
+    }
     .brand-mark {
-      display: grid; place-items: center;
-      width: 34px; height: 34px; border-radius: 10px;
-      background: var(--blue-pale); color: var(--blue-dark);
-      font-family: Georgia, serif; font-size: 20px;
+      display: grid; 
+      place-items: center;
+      width: 34px; 
+      height: 34px; 
+      border-radius: 10px;
+      background: var(--blue-pale); 
+      color: var(--blue-dark);
+      font-family: Georgia, serif; 
+      font-size: 20px;
     }
     .nav-links { 
       display: flex; 
@@ -68,7 +81,7 @@
       color: var(--blue-dark); 
     }
     .wrap { 
-      width: min(1200px, calc(100% - 40px)); 
+      width: min(960px, calc(100% - 40px)); 
       margin: 0 auto; 
     }
     .hero { 
@@ -229,11 +242,11 @@
     }
     .about-panel { 
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 26px;
-      padding: 28px; 
-      border: 1px solid var(--line); 
-      border-radius: var(--radius); 
+      grid-template-columns: 0 1fr;
+      gap: 0px;
+      padding: 5px; 
+      border: 1px solid var(--surface); 
+      border-radius: var(--surface); 
       background: var(--surface); 
     }
     .about-panel p { 
@@ -260,7 +273,7 @@
       border-radius: 8px; 
       background: #fbfcfe; 
       color: #53657b; 
-      font-size: 11px; 
+      font-size: 13px; 
     }
     .note { margin-top: 18px; 
       padding: 16px 18px;
@@ -274,12 +287,29 @@
       margin-top: 20px; 
       border-top: 1px solid var(--line); 
     }
-    .footer-inner { display: flex; 
+    .footer-inner { 
+      display: flex; 
       justify-content: space-between; 
       gap: 16px; 
-      padding: 24px 0 34px; 
+      max-height: 90px;
+      padding: 20px 0px 20px; 
       color: var(--muted); 
-      font-size: 11px; 
+      font-size: 16px; 
+    }
+    .footer-inner span {
+      margin: auto 0;
+    }
+    .footer-inner a{
+      margin-top: 10px;
+    }
+    .footer-inner a2{
+      color: #333333b7;
+      font-size: 18px;
+    }
+    .sns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     .menu-toggle { 
       display: none;
@@ -316,19 +346,24 @@
   <header class="site-header">
     <nav class="nav" aria-label="メインナビゲーション">
       <a class="brand" href="#top" aria-label="ホームへ">
-        <span>Myportfolio</span>
+        <span>non</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <div class="nav-links" id="nav-links">
         <a href="#notes">Notes</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="https://github.com/k50538471-prog"><img src="/GitHub_Invertocat_Black_Clearspace.svg"alt=""width="30px"height="30px"></a>
+        <a href="https://x.com/suwizyi"target="_blank"rel="noopener noreferrer">𝕏</a>
       </div>
     </nav>
   </header>
   <main id="top" class="wrap">
     <section class="hero" aria-labelledby="hero-title">
-      <p class="hero-copy">数学・アルゴリズム・情報技術についてのノートをまとめていくサイトです．</p>
+      <p class="hero-copy">
+      こんにちは，のんです．<br>
+      インフラエンジニア志望の現在数学科所属の大学2年生です．アルゴリズム，c++，ネットワークセキュリティなどを勉強しています．
+      </p>
       <!-- <div class="hero-actions">
         <a class="button button-primary" href="#notes">notes<span aria-hidden="true"></span></a>
         <a class="button" href="#projects">projects<span aria-hidden="true"></span></a>
@@ -377,15 +412,15 @@
 
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="section-heading">
-        <div><h2 id="about-title">このサイトについて</h2></div>
+        <div><h2 id="about-title">topics&skills</h2></div>
       </div>
       <div class="about-panel">
         <div>
           <!-- <h3 style="margin:0;font-size:16px">Theory, code, and curiosity.</h3> -->
-          <p>数学、プログラミングや情報技術を学んでいます．</p>
+          <!-- <p>数学、プログラミングや情報技術を学んでいます．</p> -->
         </div>
         <div>
-          <p class="stack-label">Topics & tools</p>
+          <!--<p class="stack-label">Topics & tools</p> -->
           <div class="chips">
             <span class="chip">Mathematics</span><span class="chip">C++</span><span class="chip">Python</span><span class="chip">Algorithms</span><span class="chip">Linux</span><span class="chip">Security</span><span class="chip">LaTeX</span>
           </div>
@@ -395,7 +430,12 @@
   </main>
 
   <footer>
-    <div class="wrap footer-inner"><span>© 2026 Notes & Projects</span><span>Built with curiosity · HTML & CSS</span></div>
+    <div class="wrap footer-inner"><span>© 2026 non</span>
+    <sns class = "sns">
+      <a href="https://github.com/k50538471-prog"><img src="/GitHub_Invertocat_Black_Clearspace.svg"alt=""width="30px"height="30px"></a>
+      <a2 href="https://x.com/suwizyi"target="_blank"rel="noopener noreferrer">𝕏</a2>
+    </sns>
+  </div>
   </footer>
   <script>
     const menuButton = document.querySelector('.menu-toggle');
